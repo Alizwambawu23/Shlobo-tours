@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Shlobo - Find The Perfect Place For You</title>
+  <meta name="description" content="Discover and book amazing tours, travel packages, and destinations with Shlobo Tours. Your perfect journey awaits." />
+  <meta name="keywords" content="Shlobo, travel, tour, booking, vacation, holiday, destinations, travel agency" />
+
+  <!-- Open Graph Meta Tags (for social media sharing) -->
+  <meta property="og:title" content="Shlobo - Find The Perfect Place For You" />
+  <meta property="og:description" content="Discover and book amazing tours and travel packages with Shlobo Tours." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.shlobo.com/" />
+  <meta property="og:image" content="https://www.shlobo.com/assets/images/social-preview.jpg" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shlobo - Find The Perfect Place For You" />
+  <meta name="twitter:description" content="Discover and book amazing tours and travel packages with Shlobo Tours." />
+  <meta name="twitter:image" content="https://www.shlobo.com/assets/images/social-preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- ======== HERO + NAV SECTION [START] ======== -->
+  <header class="hero-section">
+    <!-- background video -->
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="assets/images/istockphoto-1047784410-640_adpp_is.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Left: Logo -->
+        <a href="/" class="nav-logo">Shlobo Tours</a>
+
+        <!-- Middle: Nav Links -->
+        <ul class="nav-menu-desktop">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#app" class="nav-link">Mobile App</a></li>
+        </ul>
+
+        <!-- Right: CTA Button -->
+        <a href="#contact" class="nav-button cta-button">Contact Us</a>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <ul class="nav-menu-mobile">
+      <i class="ri-close-line close-menu-icon" aria-hidden="true"></i>
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+      <li class="nav-item"><a href="#app" class="nav-link">Mobile App</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-button cta-button">Contact Us</a></li>
+    </ul>
+
+    <div class="hero-content">
+      <h1>FIND THE<br />PERFECT PLACE<br />FOR YOU</h1>
+      <p>Discover your dream place and make it the best for you</p>
+    </div>
+
+    <!-- Booking Form Section -->
+    <div class="booking-form">
+      <form action="#" class="booking-main-form" aria-label="Booking form">
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Where are you going?" />
+        </div>
+        <div class="form-group">
+          <label for="check-in">Check In</label>
+          <input type="date" id="check-in" name="check_in" />
+        </div>
+        <!-- Check Out Date Field -->
+        <div class="form-group">
+          <label for="check-out">Check Out</label>
+          <input type="date" id="check-out" name="check_out" />
+        </div>
+        <div class="form-group">
+          <label for="traveler">Traveler</label>
+          <input type="number" id="traveler" name="traveler" placeholder="How many are traveling?" min="1" />
+        </div>
+        <button type="submit" class="form-submit-btn" aria-label="Search">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Places Info -->
+    <div class="hero-bottom-info">
+      <div class="bottom-info-left">
+        <h2>Cape Town</h2>
+        <p>Meet Me in the Mother City.</p>.<br/>Cape Town-A Magical World Waiting for You.</p>
+      </div>
+      <div class="bottom-info-right">
+        <a href="#main-content" class="scroll-down" aria-label="Scroll down">
+          <i class="ri-arrow-down-line"></i>
+          <span>Scroll<br />Down</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- ======== HERO + NAV SECTION [END] ======== -->
+
+  <main id="main-content">
+    <!-- ======== POPULAR SECTION [START] ======== -->
+    <section class="popular-section" id="places">
+      <div class="container">
+        <div class="popular-header">
+          <div class="popular-header-text">
+            <h2>The JOURNEY THAT LIVES<br />IN THE HEART</h2>
+            <p>Though the moments may pass and the days may change, the memories we create stay with us—etched in our hearts, shaping who we are and reminding us of the beauty we've lived through.</p>
+          </div>
+          <div class="popular-header-button">
+            <a href="#explore" class="btn">Explore</a>
+          </div>
+        </div>
+
+        <div class="popular-grid">
+          <a href="#" class="popular-card" style="background-image: url('assets/images/kashmir.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>KASHMIR</h3>
+              <p>Experience the 'Paradise on Earth' with serene lakes, lush valleys, and snow-capped peaks. A timeless beauty that captivates every visitor.</p>
+            </div>
+          </a>
+
+          <a href="#" class="popular-card" style="background-image: url('assets/images/manali.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>MANALI</h3>
+              <p>Nestled in the mountains, Manali offers adventure and stunning landscapes—perfect for a serene getaway.</p>
+            </div>
+          </a>
+
+          <a href="#" class="popular-card" style="background-image: url('assets/images/ooty.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>OOTY</h3>
+              <p>Nestled in the Nilgiri Hills, Ooty offers tea plantations, misty landscapes, and colonial charm.</p>
+            </div>
+          </a>
+
+          <a href="#" class="popular-card" style="background-image: url('assets/images/puducherry.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>PUDUCHERRY</h3>
+              <p>Find a unique touch of French colonial charm, stroll along serene beaches, and discover spiritual havens like Auroville.</p>
+            </div>
+          </a>
+
+          <a href="#" class="popular-card" style="background-image: url('assets/images/tokyo.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>TOKYO</h3>
+              <p>From ancient temples to neon-lit skyscrapers, Tokyo is a city of endless discovery.</p>
+            </div>
+          </a>
+
+          <a href="#" class="popular-card" style="background-image: url('assets/images/bali.jpg');">
+            <div class="popular-card-arrow">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+            <div class="popular-card-content">
+              <h3>BALI</h3>
+              <p>The Island of Gods—lush jungles, iconic rice paddies, and stunning beaches.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="popular-show-more">
+          <a href="#" class="btn" id="show-more">Show More</a>
+        </div>
+      </div>
+    </section>
+    <!-- ======== POPULAR SECTION [END] ======== -->
+  </main>
+
+  <!-- ======== PLACE SECTION [START] ======== -->
+  <section class="place-section">
+    <div class="container">
+      <div class="places-header">
+        <h2>YOU PICK THE PLACE<br />WE PLAN THE JOURNEY</h2>
+        <p>Whether you're dreaming of tropical beaches, snowy peaks, or vibrant city streets, we turn your travel ideas into seamless, unforgettable experiences. Let us handle the details.</p>
+      </div>
+
+      <div class="places-filters">
+        <div class="filter-buttons-wrapper">
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="">ALL</button>
+            <button class="filter-btn" data-filter="India">India</button>
+            <button class="filter-btn" data-filter="Australia">Australia</button>
+            <button class="filter-btn" data-filter="Japan">Japan</button>
+            <button class="filter-btn" data-filter="Germany">Germany</button>
+            <button class="filter-btn" data-filter="United Kingdom">United Kingdom</button>
+            <button class="filter-btn" data-filter="UAE">UAE (Dubai)</button>
+            <button class="filter-btn" data-filter="Russia">Russia</button>
+            <button class="filter-btn" data-filter="USA">USA</button>
+            <button class="filter-btn" data-filter="South Africa">South Africa</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-bar-container">
+        <form class="places-search" role="search" aria-label="Places search">
+          <i class="ri-search-line" aria-hidden="true"></i>
+          <input type="search" name="q" placeholder="Search by country or city name..." />
+          <button type="submit" aria-label="Search">Search</button>
+        </form>
+      </div>
+
+      <div class="places-grid collapsed">
+        <a href="#" class="place-card" data-category="Indonesia" style="background-image: url('assets/images/bali.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>Indonesia</span>
+            <h3>Bali</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="Germany" style="background-image: url('assets/images/berlin.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>Germany</span>
+            <h3>Berlin</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="UK" style="background-image: url('assets/images/london.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>United Kingdom</span>
+            <h3>London</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="Japan" style="background-image: url('assets/images/tokyo.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>Japan</span>
+            <h3>Tokyo</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="China" style="background-image: url('assets/images/wuhan.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>China</span>
+            <h3>Wuhan</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="India" style="background-image: url('assets/images/kashmir.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>India</span>
+            <h3>Kashmir</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="India" style="background-image: url('assets/images/manali.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>India</span>
+            <h3>Manali</h3>
+          </div>
+        </a>
+
+        <a href="#" class="place-card" data-category="India" style="background-image: url('assets/images/ooty.jpg');">
+          <div class="place-card-arrow">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+          <div class="place-card-content">
+            <span>India</span>
+            <h3>Ooty</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="no-results-message" id="no-results-message" style="display: none;">
+        <i class="ri-search-eye-line"></i>
+        <h3>No Place Found</h3>
+        <p>Sorry, we couldn't find any places matching your search or filter. Try a different one.</p>
+      </div>
+
+      <div class="places-view-more">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="testimonial-header">
+        <h2>WHAT OUR TRAVELERS ARE SAYING</h2>
+        <p>
+          Discover experiences and stories from those who have journeyed with us.
+          Hear firsthand how we've helped make their trips unforgettable — from seamless planning to amazing adventures.
+        </p>
+      </div>
+
+      <!-- Testimonial Content -->
+      <div class="testimonial-content">
+        <!-- Left Side: Images -->
+        <div class="testimonial-image-container">
+          <img src="assets/images/testimonial-place-tokyo.jpg" alt="Tokyo" class="testimonial-place-img" />
+          <img src="assets/images/IMG-20190518-WA0077.jpg" alt="Alizwa Mbawu" class="testimonial-profile-img" />
+        </div>
+
+        <!-- Right Side: Review -->
+        <div class="testimonial-review">
+          <p class="review-text">
+            "Alizwa made my trip planning simple and stress-free. Great deals, easy booking, and excellent support. Highly recommend!"
+          </p>
+
+          <div class="client-info">
+            <h3 class="client-name">Alizwa Mbawu</h3>
+            <span class="client-location">Tokyo Traveler</span>
+
+            <div class="testimonial-stars" aria-hidden="true">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-button-container">
+        <a href="#" class="btn">WRITE YOURS</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <p>Got questions? We've got answers. If you don't find what you're looking for, feel free to contact us directly. We're here to help make your journey smooth.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I book a trip?</span>
+            <div class="faq-icon-wrapper">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </button>
+          <div class="faq-answer" hidden>
+            <div class="faq-answer-content">
+              <p>Booking a trip with Shlobo is easy! Browse destinations, select a package, customize it, and confirm your booking. You can also contact our support team for assistance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What payment methods do you accept?</span>
+            <div class="faq-icon-wrapper">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </button>
+          <div class="faq-answer" hidden>
+            <div class="faq-answer-content">
+              <p>We accept major credit cards (Visa, MasterCard, AmEx), debit cards, net banking and popular UPI/payment methods for secure transactions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I cancel or change my booking?</span>
+            <div class="faq-icon-wrapper">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </button>
+          <div class="faq-answer" hidden>
+            <div class="faq-answer-content">
+              <p>Yes—cancellations and modifications are possible, subject to our cancellation policy and partner terms (airlines, hotels). Check your booking's policy or contact support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you offer travel insurance?</span>
+            <div class="faq-icon-wrapper">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </button>
+          <div class="faq-answer" hidden>
+            <div class="faq-answer-content">
+              <p>We recommend travel insurance. While we don't sell it directly, we partner with providers and can help you choose the right plan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-download-section" id="app">
+    <div class="container">
+      <div class="app-download-header">
+        <h2>DOWNLOAD OUR MOBILE APP</h2>
+        <p>Get exclusive deals, manage your bookings on the go, and access your travel plans anytime. Your perfect trip is just a tap away.</p>
+      </div>
+
+      <div class="app-buttons-container">
+        <a href="#" class="app-store-btn" aria-label="Download on the App Store">
+          <i class="ri-apple-fill"></i>
+          <span>Download on the <strong>App Store</strong></span>
+        </a>
+
+        <a href="#" class="google-play-btn" aria-label="Get it on Google Play">
+          <i class="ri-google-play-fill"></i>
+          <span>GET IT ON <strong>Google Play</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-col-logo">
+          <a href="index.html" class="footer-logo">Shlobo</a>
+          <p>Your journey begins here. Discover and book amazing travel experiences and make your dream a reality.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#plans">Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">Why Shlobo?</a></li>
+            <li><a href="#partner">Partner With Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates and offers.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Enter your email..." required />
+            <button type="submit" aria-label="Subscribe">
+              <i class="ri-send-plane-fill"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr class="footer-divider" />
+        <div class="footer-bottom-content">
+          <p class="copyright-text">&copy; 2026 Shlobo. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

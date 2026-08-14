@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Shlobo Tours - Destination</title>
+  <meta name="description" content="Discover and book amazing tours, travel packages and destinations with Shlobo Tours. Your perfect journey awaits." />
+
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-container container">
+      <a href="index.html" class="nav-logo">Shlobo</a>
+
+      <ul class="nav-menu-desktop" role="menubar" aria-label="Primary">
+        <li class="nav-item" role="none"><a role="menuitem" href="index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item" role="none"><a role="menuitem" href="index.html#places" class="nav-link">Places</a></li>
+        <li class="nav-item" role="none"><a role="menuitem" href="index.html#about" class="nav-link">About Us</a></li>
+        <li class="nav-item" role="none"><a role="menuitem" href="index.html#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-item" role="none"><a role="menuitem" href="index.html#app" class="nav-link">Mobile App</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="nav-button cta-button">Contact Us</a>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (off-canvas) -->
+  <div id="mobile-menu" class="nav-menu-mobile" aria-hidden="true">
+    <button class="close-menu-icon" aria-label="Close menu">
+      <i class="ri-close-line" aria-hidden="true"></i>
+    </button>
+
+    <ul role="menu" aria-label="Mobile primary">
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#home" class="nav-link">Home</a></li>
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#places" class="nav-link">Places</a></li>
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#about" class="nav-link">About Us</a></li>
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#faq" class="nav-link">FAQ</a></li>
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#app" class="nav-link">Mobile App</a></li>
+      <li class="nav-item" role="none"><a role="menuitem" href="index.html#contact" class="nav-button cta-button">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- DESTINATION SECTION -->
+  <main>
+    <section class="destination-section">
+      <div class="container">
+        <header class="destination-header">
+          <h1 id="destination-title">Loading...</h1>
+          <p>Explore the stunning beauty of this destination through our gallery.</p>
+        </header>
+
+        <div class="masonry-grid" id="masonry-grid" aria-live="polite" aria-busy="true">
+          <!-- Images will be injected here by JS -->
+        </div>
+
+        <div id="loading-message" style="text-align: center; padding: 2rem;">
+          <p>Loading images...</p>
+        </div>
+
+        <div id="error-message" style="text-align: center; padding: 2rem; display: none;" role="status">
+          <h2>Oops! Destination not found.</h2>
+          <p>We couldn't find the place you're looking for. Maybe try another one?</p>
+          <a href="index.html" class="btn" style="margin-top: 1rem;">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-section" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Support Column -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col footer-col-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates and offers.</p>
+          <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
+            <input type="email" placeholder="Enter your email..." required />
+            <button type="submit" aria-label="Subscribe">
+              <i class="ri-send-plane-fill" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr class="footer-divider" />
+        <div class="footer-bottom-content">
+          <p class="copyright-text">&copy; 2026 Shlobo. All rights reserved.</p>
+          <div class="social-icons" role="navigation" aria-label="Social links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/destination.js" defer></script>
+</body>
+</html>
