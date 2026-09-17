@@ -288,4 +288,95 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('click', handleCardClick);
     });
   }
+
+  // ====================
+  // 8. BALLOON ANIMATION ON IMAGE CLICK
+  // ====================
+  const balloonColors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E2'];
+
+  function createBalloons(event) {
+    const clickX = event.clientX;
+    const clickY = event.clientY;
+    const balloonCount = 8;
+
+    for (let i = 0; i < balloonCount; i++) {
+      const balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      
+      // Random color from the array
+      const randomColor = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+      balloon.style.backgroundColor = randomColor;
+      
+      // Position balloon at click location
+      balloon.style.left = (clickX - 15) + 'px';
+      balloon.style.bottom = (window.innerHeight - clickY) + 'px';
+      
+      // Add slight delay for staggered effect
+      balloon.style.animationDelay = (i * 0.1) + 's';
+      
+      document.body.appendChild(balloon);
+      
+      // Trigger animation
+      setTimeout(() => {
+        balloon.classList.add('animate');
+      }, 10);
+      
+      // Remove balloon from DOM after animation completes
+      setTimeout(() => {
+        balloon.remove();
+      }, 3500);
+    }
+  }
+
+  // Add balloon effect to all images
+  document.querySelectorAll('img').forEach((img) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', (e) => {
+      e.stopPropagation();
+      createBalloons(e);
+    });
+  });
+
+  // ====================
+  // 9. WIREFRAME VISUALIZATION MODE
+  // ====================
+  let wireframeEnabled = false;
+
+  // Create wireframe toggle button
+  const wireframeBtn = document.createElement('button');
+  wireframeBtn.className = 'wireframe-toggle-btn';
+  wireframeBtn.title = 'Toggle Wireframe Mode (Press W)';
+  wireframeBtn.innerHTML = '📐';
+  wireframeBtn.setAttribute('aria-label', 'Toggle wireframe visualization');
+  document.body.appendChild(wireframeBtn);
+
+  // Create wireframe info panel
+  const wireframeInfo = document.createElement('div');
+  wireframeInfo.className = 'wireframe-info';
+  wireframeInfo.innerHTML = `
+    <strong>Wireframe Mode: ON</strong><br/>
+    <small>Press <strong>W</strong> to toggle</small><br/>
+    <small style="color: #ff6b6b;">■ Red = Header</small><br/>
+    <small style="color: #00ff00;">■ Green = Main</small><br/>
+    <small style="color: #0099ff;">■ Blue = Footer</small><br/>
+    <small style="color: #ffaa00;">■ Orange = Sections</small>
+  `;
+  document.body.appendChild(wireframeInfo);
+
+  function toggleWireframe() {
+    wireframeEnabled = !wireframeEnabled;
+    document.documentElement.classList.toggle('wireframe-mode', wireframeEnabled);
+    wireframeBtn.classList.toggle('active', wireframeEnabled);
+    wireframeInfo.classList.toggle('show', wireframeEnabled);
+  }
+
+  // Toggle wireframe on button click
+  wireframeBtn.addEventListener('click', toggleWireframe);
+
+  // Toggle wireframe on 'W' key press
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'w' || e.key === 'W') {
+      toggleWireframe();
+    }
+  });
 });
