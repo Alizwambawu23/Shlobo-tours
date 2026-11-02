@@ -1736,7 +1736,18 @@ img {
     width: 100%;
   }
 
-  .review-text {
-    font-size: 1rem;
-  }
+  /* ======== FORM STATUS STYLES ======== */
+.form-status {
+  margin-top: 1rem;
+  color: var(--color-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.newsletter-form .form-status,
+.booking-main-form .form-status {
+  width: 100%;
+  margin-top: 0.75rem;
+}
 }

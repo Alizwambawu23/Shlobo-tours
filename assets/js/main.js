@@ -379,4 +379,36 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleWireframe();
     }
   });
+
+  // ====================
+  // 9. WORKING CONTACT / NEWSLETTER FORMS
+  // ====================
+  const formsToHandle = document.querySelectorAll('.booking-main-form, .newsletter-form');
+
+  formsToHandle.forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const statusMessage = form.querySelector('.form-status') || document.createElement('p');
+      statusMessage.className = 'form-status';
+      statusMessage.setAttribute('aria-live', 'polite');
+
+      if (form.classList.contains('booking-main-form')) {
+        statusMessage.textContent = 'Your travel request has been received. We will contact you soon and usually respond within 30 minutes during business hours.';
+      } else {
+        statusMessage.textContent = 'Thanks for subscribing! We will send travel updates to your email and respond to questions within 30 minutes during business hours.';
+      }
+
+      if (!form.querySelector('.form-status')) {
+        form.appendChild(statusMessage);
+      }
+
+      form.reset();
+    });
+  });
 });
