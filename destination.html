@@ -18,6 +18,9 @@
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet" />
 
+  <!-- Map Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -71,6 +74,14 @@
           <p>Explore the stunning beauty of this destination through our gallery.</p>
         </header>
 
+        <div class="destination-map-card">
+          <div class="destination-map-header">
+            <h2>Location Overview</h2>
+            <p id="destination-location-details">Loading destination location...</p>
+          </div>
+          <div id="destination-map" class="destination-map" aria-label="Map of the selected destination"></div>
+        </div>
+
         <div class="masonry-grid" id="masonry-grid" aria-live="polite" aria-busy="true">
           <!-- Images will be injected here by JS -->
         </div>
@@ -83,6 +94,83 @@
           <h2>Oops! Destination not found.</h2>
           <p>We couldn't find the place you're looking for. Maybe try another one?</p>
           <a href="index.html" class="btn" style="margin-top: 1rem;">Back to Home</a>
+        </div>
+
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section" aria-label="Visitor comments and AI travel assistant">
+          <div class="comments-header">
+            <h2>Travel Notes & AI Guide</h2>
+            <p>Share your thoughts and get a quick AI-inspired itinerary suggestion for this destination.</p>
+          </div>
+
+          <div class="comments-layout">
+            <div class="comment-form-card">
+              <form class="comment-form" aria-label="Leave a comment">
+                <div class="comment-field">
+                  <label for="comment-name">Name</label>
+                  <input id="comment-name" name="comment-name" type="text" placeholder="Your name" required />
+                </div>
+
+                <div class="comment-field">
+                  <label for="comment-message">Comment</label>
+                  <textarea id="comment-message" name="comment-message" placeholder="Tell us what you love about this place..." rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Post Comment</button>
+              </form>
+            </div>
+
+            <div class="ai-response-card" aria-live="polite">
+              <div class="ai-badge">
+                <i class="ri-magic-line"></i>
+                Shlobo AI
+              </div>
+              <h3>Suggested quick plan</h3>
+              <p>
+                Based on your destination, I recommend a sunrise walk, a local food tasting, and one scenic photo stop before sunset.
+                This gives you the best mix of culture, comfort, and unforgettable views.
+              </p>
+              <ul>
+                <li>Morning: Explore local landmarks</li>
+                <li>Afternoon: Relax and enjoy a guided experience</li>
+                <li>Evening: Scenic dinner with a sunset view</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="comment-list" aria-label="Comments list">
+            <article class="comment-item">
+              <div class="comment-meta">
+                <strong>Aphiwe N.</strong>
+                <span>2 days ago</span>
+              </div>
+              <p>The views were stunning and the whole trip felt easy from start to finish. I would definitely travel here again with friends and family.</p>
+            </article>
+
+            <article class="comment-item">
+              <div class="comment-meta">
+                <strong>Keabetswe M.</strong>
+                <span>1 week ago</span>
+              </div>
+              <p>I loved the mix of adventure and relaxation. It felt like a true getaway without the stress of planning everything alone.</p>
+            </article>
+
+            <article class="comment-item">
+              <div class="comment-meta">
+                <strong>Shlobo AI</strong>
+                <span>Just now</span>
+              </div>
+              <p>This destination is perfect for travelers who want beautiful scenery, cultural experiences and a smooth itinerary. I recommend a relaxed morning, a guided local experience, and a sunset stop for unforgettable photos.</p>
+            </article>
+
+            <article class="comment-item">
+              <div class="comment-meta">
+                <strong>Lerato S.</strong>
+                <span>3 days ago</span>
+              </div>
+              <p>The atmosphere was warm, welcoming and full of life. It felt like a memorable trip that was both affordable and inspiring.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -142,6 +230,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/destination.js" defer></script>
 </body>

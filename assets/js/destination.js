@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridElement = document.getElementById('masonry-grid');
   const loadingElement = document.getElementById('loading-message');
   const errorElement = document.getElementById('error-message');
+  const mapElement = document.getElementById('destination-map');
+  const locationDetailsElement = document.getElementById('destination-location-details');
 
   // Basic sanity checks
   if (!titleElement || !gridElement || !loadingElement || !errorElement) {
@@ -79,6 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     titleElement.textContent = destination.title;
     titleElement.style.display = ''; // ensure it's visible
 
+    if (locationDetailsElement) {
+      locationDetailsElement.textContent = `${destination.location || destination.title} — ${destination.description || 'Explore this destination.'}`;
+    }
+
+    if (mapElement && window.L && Array.isArray(destination.coordinates) && destination.coordinates.length === 2) {
+      initializeMap(destination);
+    }
+
     // Clear any previous grid content
     gridElement.innerHTML = '';
     gridElement.setAttribute('aria-busy', 'true');
@@ -118,6 +128,25 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingElement.style.display = 'none';
     gridElement.setAttribute('aria-busy', 'false');
     gridElement.setAttribute('aria-live', 'polite');
+  }
+
+  function initializeMap(destination) {
+    const map = window.L.map(mapElement, {
+      zoomControl: true,
+      scrollWheelZoom: true,
+      dragging: true,
+      attributionControl: true
+    }).setView(destination.coordinates, 13);
+
+    window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    window.L.marker(destination.coordinates)
+      .addTo(map)
+      .bindPopup(`<strong>${destination.title}</strong><br>${destination.location || ''}<br><small>Street view map</small>`)
+      .openPopup();
   }
 
   // ==================== 5. ERROR HANDLING FUNCTION ====================

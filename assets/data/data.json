@@ -1,9 +1,12 @@
 {
   "kashmir": {
     "title": "Kashmir",
+    "location": "Kashmir, India",
+    "coordinates": [34.0837, 74.7973],
+    "description": "A breathtaking valley known for snow-capped mountains, lakes and scenic houseboats.",
     "images": [
-      "assets/images/kashmir.jpg",
       "https://images.pexels.com/photos/34571097/pexels-photo-34571097.jpeg",
+      "assets/images/kashmir.jpg",
       "https://images.pexels.com/photos/3974036/pexels-photo-3974036.jpeg",
       "https://images.pexels.com/photos/34613781/pexels-photo-34613781.jpeg",
       "https://images.pexels.com/photos/28855490/pexels-photo-28855490.jpeg",
@@ -21,9 +24,12 @@
   },
   "manali": {
     "title": "Manali",
+    "location": "Manali, India",
+    "coordinates": [32.2432, 77.1892],
+    "description": "A cool mountain escape with valleys, pine forests, snow peaks and adventure activities.",
     "images": [
-      "assets/images/manali.jpg",
       "https://images.pexels.com/photos/5205097/pexels-photo-5205097.jpeg",
+      "assets/images/manali.jpg",
       "https://images.pexels.com/photos/5205636/pexels-photo-5205636.jpeg",
       "https://images.pexels.com/photos/939715/pexels-photo-939715.jpeg",
       "https://images.pexels.com/photos/5205541/pexels-photo-5205541.jpeg",
@@ -41,9 +47,12 @@
   },
   "ooty": {
     "title": "Ooty",
+    "location": "Ooty, India",
+    "coordinates": [11.4064, 76.6932],
+    "description": "A charming hill station with tea gardens, cool weather and peaceful landscapes.",
     "images": [
-      "assets/images/ooty.jpg",
       "https://images.pexels.com/photos/13257014/pexels-photo-13257014.jpeg",
+      "assets/images/ooty.jpg",
       "https://images.pexels.com/photos/31029893/pexels-photo-31029893.jpeg",
       "https://images.pexels.com/photos/5330349/pexels-photo-5330349.jpeg",
       "https://images.pexels.com/photos/8465212/pexels-photo-8465212.jpeg",
@@ -62,9 +71,12 @@
   },
   "puducherry": {
     "title": "Puducherry",
+    "location": "Puducherry, India",
+    "coordinates": [11.9416, 79.8083],
+    "description": "A coastal town known for beaches, French heritage and laid-back culture.",
     "images": [
-      "assets/images/puducherry.jpg",
       "https://images.pexels.com/photos/1799730/pexels-photo-1799730.jpeg",
+      "assets/images/puducherry.jpg",
       "https://images.pexels.com/photos/4870482/pexels-photo-4870482.jpeg",
       "https://images.pexels.com/photos/28703341/pexels-photo-28703341.jpeg",
       "https://images.pexels.com/photos/12094085/pexels-photo-12094085.jpeg",
@@ -83,9 +95,12 @@
   },
   "bali": {
     "title": "Bali",
+    "location": "Bali, Indonesia",
+    "coordinates": [-8.4095, 115.1889],
+    "description": "A tropical island with beaches, rice terraces, temples and unforgettable sunsets.",
     "images": [
-      "assets/images/bali.jpg",
       "https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg",
+      "assets/images/bali.jpg",
       "https://images.pexels.com/photos/1694621/pexels-photo-1694621.jpeg",
       "https://images.pexels.com/photos/2100804/pexels-photo-2100804.jpeg",
       "https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg",
@@ -109,9 +124,12 @@
   },
   "berlin": {
     "title": "Berlin",
+    "location": "Berlin, Germany",
+    "coordinates": [52.52, 13.405],
+    "description": "A lively city of history, culture, art and modern architecture.",
     "images": [
-      "assets/images/berlin.jpg",
       "https://images.pexels.com/photos/1128408/pexels-photo-1128408.jpeg",
+      "assets/images/berlin.jpg",
       "https://images.pexels.com/photos/109630/pexels-photo-109630.jpeg",
       "https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg",
       "https://images.pexels.com/photos/1057840/pexels-photo-1057840.jpeg",
@@ -130,9 +148,12 @@
   },
   "london": {
     "title": "London",
+    "location": "London, United Kingdom",
+    "coordinates": [51.5072, -0.1276],
+    "description": "A globally iconic city filled with landmarks, culture and memorable experiences.",
     "images": [
-      "assets/images/london.jpg",
       "https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg",
+      "assets/images/london.jpg",
       "https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg",
       "https://images.pexels.com/photos/1796715/pexels-photo-1796715.jpeg",
       "https://images.pexels.com/photos/813362/pexels-photo-813362.jpeg",
@@ -151,9 +172,12 @@
   },
   "tokyo": {
     "title": "Tokyo",
+    "location": "Tokyo, Japan",
+    "coordinates": [35.6762, 139.6503],
+    "description": "A vibrant metropolis blending tradition, technology and unforgettable city life.",
     "images": [
-      "assets/images/tokyo.jpg",
       "https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg",
+      "assets/images/tokyo.jpg",
       "https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg",
       "https://images.pexels.com/photos/1344537/pexels-photo-1344537.jpeg",
       "https://images.pexels.com/photos/161251/senso-ji-temple-japan-kyoto-landmark-161251.jpeg",
@@ -172,9 +196,12 @@
   },
   "wuhan": {
     "title": "Wuhan",
+    "location": "Wuhan, China",
+    "coordinates": [30.5928, 114.3055],
+    "description": "A major cultural and historic hub with riverside views and urban character.",
     "images": [
-      "assets/images/wuhan.jpg",
       "https://images.pexels.com/photos/2310907/pexels-photo-2310907.jpeg",
+      "assets/images/wuhan.jpg",
       "https://images.pexels.com/photos/4926945/pexels-photo-4926945.jpeg",
       "https://images.pexels.com/photos/34645664/pexels-photo-34645664.jpeg",
       "https://images.pexels.com/photos/25261491/pexels-photo-25261491.jpeg",
